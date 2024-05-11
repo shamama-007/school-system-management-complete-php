@@ -1,0 +1,126 @@
+/* Print PDF */
+@media print {
+  body {
+    visibility: hidden;
+    background-color: white;
+  }
+  .print-container * {
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .print-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .print-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .print-navbar .logo {
+    height: 80px;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  .print-navbar .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .print-navbar .heading {
+    color: silver;
+    font-size: 25px;
+    border-bottom: 2px solid silver;
+
+  }
+  .print-content {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .print-content table tbody tr td {
+    padding: 8px;
+  }
+  .print-result {
+    margin: 30px 0;
+    width: 100%;
+  }
+  .print-result table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .print-result table thead {
+    text-align: left;
+    border: 1px solid silver;
+  }
+  .print-result table tbody {
+    text-align: left;
+    border: 1px solid silver;
+  }
+  .print-result table thead tr th {
+    border: 1px solid silver;
+    padding: 4px;
+  }
+  .print-result table tbody tr td {
+    border: 1px solid silver;
+    padding: 4px;
+  }
+  .print-content .print-footer {
+    width: 100%;
+    height: 400px;
+    /* background-color: red; */
+  }
+  .print-signature {
+    width: 100%;
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .print-signature .student-sign,
+  .print-signature .teacher-sign {
+    width: 150px;
+    height: 100px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .teacher-sign .signature-layout {
+    width: 130px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .teacher-sign .signature-layout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .print-signature .student-sign h5,
+  .print-signature .teacher-sign h5 {
+    border-top: 1px solid silver;
+    color: black;
+    padding: 4px;
+  }
+
+  .print-footer .main-footer {
+    border-top: 1px solid black;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .print-footer .main-footer p {
+    padding: 5px 0;
+    color: black;
+  }
+
+}

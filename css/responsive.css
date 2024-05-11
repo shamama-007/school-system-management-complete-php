@@ -1,0 +1,128 @@
+@media only screen and (max-width: 375px) {
+  .hero-item-detail-content .detail-left {
+    margin: 0;
+  }
+
+  .feedback-control h3 {
+    font-size: 20px;
+  }
+  .feedback-control {
+    width: 70%;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .feedback .form-control input,
+  textarea {
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hero-item-detail-content .detail-left h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .hero-item-detail-content .detail-left {
+    margin: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-item-detail-content .detail-left {
+    margin: 35px;
+    width: 100%;
+  }
+  .hero-item-detail-content .detail-left h1 {
+    font-size: 35px;
+    width: 100%;
+  }
+  nav {
+    overflow: hidden;
+    flex-direction: column;
+    height: 340px;
+    transition: all 0.3s ease-out;
+    background-color: #fff;
+    padding: 10px 10px 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  nav.height-navbar-resp {
+    height: 72px;
+  }
+  nav .menu div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu.v-class-resp {
+    visibility: hidden;
+    opacity: 1;
+  }
+  .brand {
+    flex-direction: column;
+  }
+  .burger {
+    display: block;
+  }
+  nav .menu div li {
+    margin: 10px 0;
+  }
+  .logo_cs {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+  }
+  .contact-section .content .left-side {
+    width: 100%;
+  }
+  .contact-section .content .right-side {
+    padding-left: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .contact-section .content {
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 946px) {
+  .service-item.item-reverse {
+    flex-direction: column;
+  }
+  .service-item {
+    flex-direction: column;
+  }
+  .course-service {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .service-item .img {
+    width: 100%;
+  }
+  .footer-section .top-side {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-item-detail-content .detail-left h1 {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-item-detail-content .detail-left h1 {
+    font-size: 32px;
+  }
+}
